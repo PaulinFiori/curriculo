@@ -248,8 +248,58 @@ a:hover {
     color: #007bff;
 }
 
+.button-pdf {
+    float: right;
+    top: 0;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
 @media screen and (max-width: 489px) {
     #DetalhesPerfil {
         margin-left: 10%;
     }
 }
+
+@media print {
+    .button-pdf {
+        display: none;
+    }
+
+    #Navbar {
+        display: none;
+    }
+
+    .intro {
+        color: black;
+    }
+
+    #Nome {
+        border-color: #007bff;
+    }
+
+    #Sumblinhado {
+        border-color: #007bff;
+    }
+
+    .btn-primary {
+        color: white;
+        background-color: black;
+        border-color: black;
+    }
+
+    .link-contatos {
+        color: black;
+    }
+
+    #Contatos {
+        color: black;
+    }
+
+    #SumblinhadoContatos {
+        border-color: black;
+    }
+  }
