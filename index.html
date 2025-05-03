@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d19a1c6feb.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="public/js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/css/index.css"/>
+    <link rel="shortcut icon" href="/public/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+    <link rel="manifest" href="public/site.webmanifest">
+    <link rel="mask-icon" href="public/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Paulo Roberto Ribeiro Fiori</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white" id="Navbar">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-block">
+                <li class="nav-item cursor-pointer d-none" id="topo">
+                    <a class="nav-link text-white" onclick="irParaTopo()">
+                        <i class="fa-solid fa-chevron-up fa-xl"></i>
+                    </a>
+                </li>
+                <li class="nav-item cursor-pointer" id="PerfilNav">
+                    <a class="nav-link text-white" onclick="irParaSecao('Perfil')">Perfil</a>
+                </li>
+                <li class="nav-item cursor-pointer" id="ExperienciasNav">
+                    <a class="nav-link text-white" onclick="irParaSecao('Experiencias')">Experiências</a>
+                </li>
+                <li class="nav-item cursor-pointer" id="HabilidadesNav">
+                    <a class="nav-link text-white" onclick="irParaSecao('Habilidades')">Habilidades</a>
+                </li>
+                <li class="nav-item cursor-pointer" id="ProjetosNav">
+                    <a class="nav-link text-white" onclick="irParaSecao('Projetos')">Projetos</a>
+                </li>
+                <li class="nav-item cursor-pointer" id="ContatosNav">
+                    <a class="nav-link text-white" onclick="irParaSecao('Contatos')">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fim NavBar -->
+
+    <!-- Intro -->
+    <div class="intro" id="Intro">
+        <button class="button-pdf" onclick="print()">
+            <i class="fa-solid fa-file-pdf"></i>
+        </button>
+        <span id="NomeIntro">
+            <h1 id="Nome">Paulo Roberto Ribeiro Fiori</h1>
+        </span>
+        <div id="Sumblinhado"></div>
+    </div>
+    <!-- Fim Intro -->
+
+    <!-- Perfil -->
+    <div class="container-fluid" id="Perfil">
+        <div class="row perfil-nome">
+            <div class="col"> 
+                <h2 id="PerfilNome">Perfil</h2>
+                <div class="sumblinhado-perfil"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="sobreMim">
+                <h3>Sobre Mim</h3>
+                <p class="texto-normal">Sou desenvolvedor. <br/> 
+                    Bacharel em Ciências da Computação pela Unitri. <br/> 
+                    Nas horas vagas gosto de jogar. <br/> 
+                    Dono da empresa GetSet Softech.
+                </p>
+            </div>
+            <div class="col">
+                <img id="FotoPerfil" alt="Foto Pessoal" src="public/images/fotominha.jpg"></img>
+            </div>
+            <div class="col" id="DetalhesPerfil">
+                <h3>Detalhes</h3>
+                <p class="texto-negrito mb-0">Nome:</p>
+                <p class="texto-normal">Paulo Roberto Ribeiro Fiori</p>
+                <p class="texto-negrito  mb-0">Data de nascimento:</p>
+                <p class="texto-normal">08 de Setembro de 2000</p>
+                <p class="texto-negrito  mb-0">Localização:</p>
+                <p class="texto-normal">Uberlândia, Minas Gerais, Brasil</p>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Perfil -->
+
+    <!-- Experiencias -->
+    <div class="container-fluid" id="Experiencias">
+        <div class="row">
+            <div class="col">
+                <h3 id="ExperienciasNome">Experiências</h3>
+                <div class="sumblinhado-perfil"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="titulo-experiencia">Educação</h3>
+                <div class="texto-experiencia"></div>
+            </div>
+        </div>
+        <div class="row texto-experiencia">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <p class="educacao-escola mb-0">faculdade VINCIT</p>
+                <p class="educacao-escola-data">Março 2023 - Março 2024</p>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <p class="educacao-tipo mb-0">Pós-graduação - Arquitetura de Software</p>
+                <p class="educacao-tipo-descricao">Aprendi vários modelos como Metodologias Ágeis, Qualidade do Código Fonte (Clean Code), Arquitetura de Software e Engenharia de Requisitos, entre outros.</p>
+            </div>
+        </div>
+        <div class="row texto-experiencia">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <p class="educacao-escola mb-0">Centro Universitário do Triângulo (Unitri)</p>
+                <p class="educacao-escola-data">Março 2018 - Julho 2022</p>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <p class="educacao-tipo mb-0">Bacharelado - Ciências da computação</p>
+                <p class="educacao-tipo-descricao">Aprendi várias linguaguens como C, C#, Java e MySql, entre outras. E outras matérias como teoria da computação, linguaguem formal automata, entre outras.</p>
+            </div>
+        </div>
+        <div class="row texto-experiencia">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <p class="educacao-escola mb-0">Escola Estadual Professor José Ignácio de Sousa</p>
+                <p class="educacao-escola-data">Fevereiro 2015 - Dezembro 2017</p>
+            </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <p class="educacao-tipo mb-0">Ensino Médio</p>
+                <p class="educacao-tipo-descricao">Estudei nessa escola por 3 anos onde fiz todo o ensino médio sem reprovar.</p>
+            </div>
+        </div>
+        <div class="row texto-experiencia">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <p class="educacao-escola mb-0">Escola Municipal Otávio Batista Coelho Filho</p>
+                <p class="educacao-escola-data">Fevereiro 2007 - Dezembro 2014</p>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <p class="educacao-tipo mb-0">Ensino Fundamental</p>
+                <p class="educacao-tipo-descricao">Estudei nessa escola por 8 anos onde fiz todo o ensino médio sem reprovar.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="sumblinhado-perfil"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="titulo-experiencia">Carreira</h3>
+            </div>
+        </div>
+        <div class="row texto-experiencia">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <p class="educacao-escola mb-0">Sontech</p>
+                <p class="educacao-escola-data">Novembro 2021 - Atualmente</p>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <p class="educacao-tipo mb-0">Desenvolvedor Júnior III</p>
+                <p class="educacao-tipo-descricao">Inicialmente contratado como Estágiario e atualmente como Desenvolvedor Júnior II.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Experiencias -->
+
+    <!-- Habilidades -->
+    <div class="habilidades container-fluid" id="Habilidades">
+        <div class="row">
+            <div class="col">
+                <h2 id="HabilidadesNome">Habilidades</h2>
+                <div class="sumblinhado-perfil"></div> 
+            </div>
+        </div>
+        <div class="row texto-habilidades">
+            <div class="col">
+                <h3 class="titulos-habilidades">Competências</h3>
+            </div>
+        </div>
+        <div class="row texto-habilidades mb-3">
+            <div class="col">
+                <p class="mb-0">CSS(3)</p>
+                <p class="mb-0">HTML(5)</p>
+                <p class="mb-0">MySql</p>
+                <p class="mb-0">Java</p>
+                <p class="mb-0">JavaScript</p>
+                <p class="mb-0">React Js</p>
+            </div>
+            <div class="col">
+                <p class="mb-0">C#</p>
+                <p class="mb-0">C</p>
+                <p class="mb-0">Python</p>
+                <p class="mb-0">Php</p>
+                <p class="mb-0">Laravel</p>
+                <p class="mb-0">Vue Js</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="sumblinhado-perfil"></div> 
+            </div>
+        </div>
+        <div class="row texto-habilidades">
+            <div class="col">
+                <h2 class="titulos-habilidades">Idiomas</h2> 
+            </div>
+        </div>
+        <div class="row texto-habilidades">
+            <div class="col">
+                <p class="mb-0">Inglês (Intermediário)</p>
+                <p class="mb-0">Espanhol (Básico)</p>
+                <p class="mb-0">Português (Fluente/Nativo)</p>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Habilidades -->
+
+    <!-- Projetos -->
+    <div class="container-fluid projetos" id="Projetos">
+        <div class="row">
+            <div class="col">
+                <h2 id="ProjetosNome">Projetos</h2>
+                <div class="sumblinhado-perfil"></div>
+            </div>
+        </div>
+        <div class="row mt-3 justify-content-around">
+            <div class="col mb-3 max-width-25rem">
+                <div class="card">
+                    <img class="card-img-top" src="public/images/projetos/apifoto.png" alt="Card image cap">
+                    <a href="https://github.com/PaulinFiori/ApiSpringbootJavaAngularJs" target="_blank" rel="noreferrer" class="btn btn-primary btn-share">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">API</h5>
+                        <p class="card-text">
+                            Esse projeto foi feito para ser uma api em springboot Java (back-end) e AngularJs (front-end).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3 max-width-25rem">
+                <div class="card">
+                    <img class="card-img-top" src="public/images/projetos/christmaslights.png" alt="Card image cap">
+                    <a href="https://github.com/PaulinFiori/ChristmasLigths" target="_blank" rel="noreferrer" class="btn btn-primary btn-share">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Christmas Ligths</h5>
+                        <p class="card-text">
+                            Luzes de natal onde vc pode parar as luzes, iniciar e definir a velocidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3 mb-3 justify-content-around">
+            <div class="col mb-3 max-width-25rem">
+                <div class="card">
+                    <img class="card-img-top" src="public/images/projetos/image2.png" alt="Card image cap">
+                    <a href="https://github.com/PaulinFiori/Contador" target="_blank" rel="noreferrer" class="btn btn-primary btn-share">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Contador</h5>
+                        <p class="card-text">
+                            Contador em que você pode colocar nome e data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3 max-width-25rem">
+                <div class="card">
+                    <img class="card-img-top" src="public/images/projetos/analisedesempenhofoto.png" alt="Card image cap">
+                    <a href="https://github.com/PaulinFiori/site-analisador-de-rede" target="_blank" rel="noreferrer" class="btn btn-primary btn-share">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Analisador de desempenho de rede</h5>
+                        <p class="card-text">
+                            Site que faz diferentes analises de desempenho de rede.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="https://github.com/PaulinFiori?tab=repositories" target="_blank" rel="noreferrer" class="see-more">
+                    Ver mais
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Projetos -->
+
+    <!-- Contatos -->
+    <div class="container-fluid" id="Contatos">
+        <div class="row">
+            <div class="col">
+                <h2 id="ContatosNome">Contatos</h2>
+                <div id="SumblinhadoContatos"></div>
+            </div>
+        </div>
+        <div class="row" id="Links">
+            <div class="col">
+                <a href="https://twitter.com/PauloFioriDev" target="_blank" rel="noreferrer" class="link-contatos">
+                    <img class="icones-contatos" alt="twitter" src="public/images/icones/twitter-icone.png"></img>
+                    Twitter
+                </a>
+
+                <br/>
+
+                <a href="https://www.linkedin.com/in/paulo-roberto-ribeiro-fiori-ab486b178/" target="_blank" rel="noreferrer" class="link-contatos">
+                    <img class="icones-contatos" alt="linkedIn" src="public/images/icones/linkeldn-icone.png"></img>
+                    LinkedIn
+                </a>
+                
+                <br/>
+
+                <a href="https://github.com/PaulinFiori" target="_blank" rel="noreferrer" class="link-contatos">
+                    <img class="icones-contatos" alt="github" src="public/images/icones/github-icone.png"></img>
+                    Github
+                </a>
+
+                <br/>
+
+                <a href="https://www.youtube.com/channel/UCz3Dfrmzk1zU-p7F0lHsoMQ" target="_blank" rel="noreferrer" class="link-contatos">
+                    <img class="icones-contatos" alt="youtube" src="public/images/icones/youtube-icone.png"></img>
+                    Youtube
+                </a>
+
+                <br/>
+            </div>
+            <div class="col">
+                <a class="link-contatos" href="mailto:paulofiori34@gmail.com" target="_blank" rel="noreferrer">
+                    <img class="icones-contatos" alt="gmail" src="public/images/icones/gmail-icone.png"></img>
+                    paulofiori35@gmail.com
+                </a>
+
+                <br/>
+
+                <a href="https://www.facebook.com/paulin.fiori" target="_blank" rel="noreferrer" class="link-contatos">
+                    <img class="icones-contatos" alt="facebook" src="public/images/icones/facebook-icone.png"></img>
+                    Facebook
+                </a>
+
+                <br/>
+
+                <a href="https://wa.me/5534996605050" target="_blank" rel="noreferrer" class="link-contatos">
+                    <img class="icones-contatos" alt="whatsapp" src="public/images/icones/WhatsApp-icone.png"></img>
+                    WhatsApp
+                </a>
+                
+                <br/>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Contatos -->
+
+</body>
+</html>

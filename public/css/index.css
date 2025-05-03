@@ -1,0 +1,305 @@
+/* Geral */
+body {
+    margin: 0px;
+    text-align: center;
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.ml-6 {
+    margin-left: 6rem !important
+}
+
+.btn-share {
+    position: absolute;
+    right: 0;
+}
+  
+/* Navbar */
+#Navbar {
+    height: max-content;
+    position: fixed;
+    float: right;
+    right: 0;
+    background-color: black !important;
+    margin-top: 16%;
+    z-index: 99999;
+}
+
+.nav-item {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.active {
+    background-color: blue;
+}
+
+.navbar {
+    padding: 0px !important;
+}
+
+/*Intro */
+.intro {
+    padding-top: 5%;
+    background-color: blue;
+    background-image: url("../images/fundoIntro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-bottom: 10%;
+    top: 0%;
+}
+
+#Nome {
+    border: 2px solid lightblue;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px 5%;
+}
+
+#Sumblinhado {
+    border: 2px solid lightblue;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+  
+/* Perfil */
+.sumblinhado-perfil {
+    border: 1px solid blue;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#Perfil {
+    background-color: white;
+}
+
+.perfil-nome {
+    margin-bottom: 10px;
+}
+
+#sobreMim {
+    text-align: left;
+    margin-left: 10%;
+}
+
+#FotoPerfil {
+    width: 120px;
+    height: 120px;
+    border: 2px solid gray;
+    margin-left: -35%;
+}
+
+#DetalhesPerfil {
+    text-align: left;
+}
+
+.texto-normal {
+    color: black;
+}
+
+.texto-negrito {
+    color: black;
+    font-weight: bold;
+}
+  
+/* Experiencias */
+#Experiencias {
+    background-color: #fff2cc;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.titulo-experiencia {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.texto-experiencia {
+    text-align: start;
+    color: black;
+    padding-left: 10%;
+}
+
+.educacao-escola {
+    font-weight: bold;
+}
+
+#Escolas {
+    display: inline-block;
+    width: 50%;
+}
+
+.educacao-tipo {
+    font-weight: bold;
+}
+  
+/* Habilidades */
+.habilidades {
+    background-color: white;
+    padding-bottom: 2%;
+    padding-top: 5px;
+}
+
+.texto-habilidades {
+    text-align: left;
+    margin-left: 10%;
+    color: black;
+}
+
+.titulos-habilidades {
+    color: blue;
+}
+  
+/* Projetos */
+.projetos {
+    background-color: #fff2cc;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+#textoProjetos {
+    text-align: left;
+    color: black;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#LinkProjetos {
+    color: blue;
+}
+
+#LinkProjetos:visited {
+    color: blue;
+}
+
+#LinkProjetos:hover {
+    color: #007bff;
+}
+
+.card-body {
+    color: black;
+    text-align: left;
+}
+
+.see-more {
+    text-decoration: underline;
+}
+
+.max-width-25rem {
+    max-width: 35rem !important;
+}
+  
+/* Contatos */
+#Contatos {
+    background-color: #666666;
+    color: white;
+    padding-bottom: 2%;
+    padding-top: 5px;
+}
+
+#SumblinhadoContatos {
+    border: 1px solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+}
+
+#Links {
+    text-align: start;
+    color: white;
+    margin-left: 10%;
+}
+
+.icones-contatos {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.link-contatos {
+    color: white;
+}
+
+.link-contatos:hover {
+    color: #007bff;
+}
+
+.button-pdf {
+    float: right;
+    top: 0;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 489px) {
+    #DetalhesPerfil {
+        margin-left: 10%;
+    }
+}
+
+@media print {
+    .button-pdf {
+        display: none;
+    }
+
+    #Navbar {
+        display: none;
+    }
+
+    .intro {
+        color: black;
+    }
+
+    #Nome {
+        border-color: #007bff;
+    }
+
+    #Sumblinhado {
+        border-color: #007bff;
+    }
+
+    .btn-primary {
+        color: white;
+        background-color: black;
+        border-color: black;
+    }
+
+    .link-contatos {
+        color: black;
+    }
+
+    #Contatos {
+        color: black;
+    }
+
+    #SumblinhadoContatos {
+        border-color: black;
+    }
+  }
